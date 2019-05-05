@@ -91,7 +91,6 @@ public class ChessBoard extends JPanel implements MouseListener {
           // g.fillOval(xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2,
                            //Point.DIAMETER, Point.DIAMETER);
            //g.drawImage(shadows, xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2, Point.DIAMETER, Point.DIAMETER, null);
-           // push test
            //set drawing color
            colortemp=chessList[i].getColor();
            if(colortemp==Color.black){
