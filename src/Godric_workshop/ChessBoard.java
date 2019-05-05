@@ -91,7 +91,7 @@ public class ChessBoard extends JPanel implements MouseListener {
           // g.fillOval(xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2,
                            //Point.DIAMETER, Point.DIAMETER);
            //g.drawImage(shadows, xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2, Point.DIAMETER, Point.DIAMETER, null);
-
+           // push test
            //set drawing color
            colortemp=chessList[i].getColor();
            if(colortemp==Color.black){
@@ -135,11 +135,11 @@ public class ChessBoard extends JPanel implements MouseListener {
        String colorName=isBlack?"Black":"White";
 
        //Convert coordinate to index  
-       xIndex=(e.getX()-MARGIN+GRID_SPAN/2)/GRID_SPAN;  
-       yIndex=(e.getY()-MARGIN+GRID_SPAN/2)/GRID_SPAN;  
+       xIndex=(e.getX()-MARGIN+GRID_SPAN/2)/GRID_SPAN;
+       yIndex=(e.getY()-MARGIN+GRID_SPAN/2)/GRID_SPAN;
 
        //Do nothing when outside the board
-       if(xIndex<0||xIndex>ROWS||yIndex<0||yIndex>COLS)  
+       if(xIndex<0||xIndex>ROWS||yIndex<0||yIndex>COLS)
            return;
 
        //Do nothing when current position already occupied
@@ -147,8 +147,8 @@ public class ChessBoard extends JPanel implements MouseListener {
 
        //if valid, Draw a new chess at current position and add index to the chessList 
        Point ch=new Point(xIndex,yIndex,isBlack?Color.black:Color.white);
-       chessList[chessCount++]=ch;  
-       repaint();//run paintComponent  
+       chessList[chessCount++]=ch;
+       repaint();//run paintComponent
 
 
        //if someone wins, give a message
@@ -291,7 +291,7 @@ public class ChessBoard extends JPanel implements MouseListener {
    }
 
    //goBack  
-   public void goback(){ 
+   public void goback(){
 	   if(isBlack) label.setText("White's Turn");
        else label.setText("Black's Turn");
        if(chessCount==0)
@@ -306,7 +306,7 @@ public class ChessBoard extends JPanel implements MouseListener {
        repaint();
    }
 
-   //override getPreferredSize  
+   //override getPreferredSize
   
    public Dimension getPreferredSize(){
        return new Dimension(MARGIN*2+GRID_SPAN*COLS,MARGIN*2
