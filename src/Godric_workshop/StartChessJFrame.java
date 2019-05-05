@@ -8,7 +8,7 @@ import javax.swing.*;
 */
 public class StartChessJFrame extends JFrame {
     /**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 	private ChessBoard chessBoard;
