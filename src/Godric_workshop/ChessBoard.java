@@ -17,7 +17,7 @@ import javax.swing.*;
 /** 
  * ChessBoard
 */
-//Test
+//Test 10
 public class ChessBoard extends JPanel implements MouseListener {
    public static final int MARGIN=45;//Margin Size
    public static final int GRID_SPAN=40;//Grid Span
@@ -61,7 +61,7 @@ public class ChessBoard extends JPanel implements MouseListener {
    }
 
 
-//»æÖÆ
+//ï¿½ï¿½ï¿½ï¿½
    public void paintComponent(Graphics g){
 
        super.paintComponent(g);//draw Panel
@@ -87,7 +87,7 @@ public class ChessBoard extends JPanel implements MouseListener {
            //Convert index to grid coordinate.
            int xPos=chessList[i].getX()*GRID_SPAN+MARGIN;
            int yPos=chessList[i].getY()*GRID_SPAN+MARGIN;
-          //g.setColor(chessList[i].getColor());//ÉèÖÃÑÕÉ«
+          //g.setColor(chessList[i].getColor());//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
           // g.fillOval(xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2,
                            //Point.DIAMETER, Point.DIAMETER);
            //g.drawImage(shadows, xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2, Point.DIAMETER, Point.DIAMETER, null);
@@ -152,7 +152,7 @@ public class ChessBoard extends JPanel implements MouseListener {
 
        //if someone wins, give a message
        if(isWin()){
-           String msg=String.format("Congratulations£¬%s won£¡", colorName);  
+           String msg=String.format("Congratulationsï¿½ï¿½%s wonï¿½ï¿½", colorName);  
            JOptionPane.showMessageDialog(this, msg);
            gameOver=true;
        }
@@ -160,17 +160,17 @@ public class ChessBoard extends JPanel implements MouseListener {
      }
    //override mouseListener's other unimplemented methods
    public void mouseClicked(MouseEvent e){
-       //Êó±ê°´¼üÔÚ×é¼þÉÏµ¥»÷Ê±µ÷ÓÃ
+       //ï¿½ï¿½ê°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
    }
 
    public void mouseEntered(MouseEvent e){
-       //Êó±ê½øÈëµ½×é¼þÉÏÊ±µ÷ÓÃ
+       //ï¿½ï¿½ï¿½ï¿½ï¿½ëµ½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
    }  
    public void mouseExited(MouseEvent e){
-       //Êó±êÀë¿ª×é¼þÊ±µ÷ÓÃ
+       //ï¿½ï¿½ï¿½ï¿½ë¿ªï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
    }  
    public void mouseReleased(MouseEvent e){
-       //Êó±ê°´Å¥ÔÚ×é¼þÉÏÊÍ·ÅÊ±µ÷ÓÃ
+       //ï¿½ï¿½ê°´Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
    }
    //if the chess at index(x,y) exists
    private boolean findChess(int x,int y){
