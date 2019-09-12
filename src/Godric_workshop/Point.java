@@ -2,7 +2,7 @@ package Godric_workshop;
   
 import java.awt.Color;  
 /** 
- * Chess
+ * Chess121
  */  
 public class Point {  
   private int x;//index x
