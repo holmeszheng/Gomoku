@@ -17,6 +17,7 @@ import javax.swing.*;
 /** 
  * ChessBoard
 */
+//temp1
 public class ChessBoard extends JPanel implements MouseListener {
    public static final int MARGIN=45;//Margin Size
    public static final int GRID_SPAN=40;//Grid Span
