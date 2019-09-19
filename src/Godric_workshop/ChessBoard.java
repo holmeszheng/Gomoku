@@ -15,7 +15,7 @@ import java.awt.geom.Ellipse2D;
   
 import javax.swing.*;  
 /** 
- * ChessBoard
+ * ChessBoard 100
 */
 
 public class ChessBoard extends JPanel implements MouseListener {
@@ -61,7 +61,7 @@ public class ChessBoard extends JPanel implements MouseListener {
    }
 
 
-//����
+//锟斤拷锟斤拷
    public void paintComponent(Graphics g){
 
        super.paintComponent(g);//draw Panel
@@ -87,7 +87,7 @@ public class ChessBoard extends JPanel implements MouseListener {
            //Convert index to grid coordinate.
            int xPos=chessList[i].getX()*GRID_SPAN+MARGIN;
            int yPos=chessList[i].getY()*GRID_SPAN+MARGIN;
-          //g.setColor(chessList[i].getColor());//������ɫ
+          //g.setColor(chessList[i].getColor());//锟斤拷锟斤拷锟斤拷色
           // g.fillOval(xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2,
                            //Point.DIAMETER, Point.DIAMETER);
            //g.drawImage(shadows, xPos-Point.DIAMETER/2, yPos-Point.DIAMETER/2, Point.DIAMETER, Point.DIAMETER, null);
@@ -152,7 +152,7 @@ public class ChessBoard extends JPanel implements MouseListener {
 
        //if someone wins, give a message
        if(isWin()){
-           String msg=String.format("Congratulations��%s won��", colorName);  
+           String msg=String.format("Congratulations锟斤拷%s won锟斤拷", colorName);  
            JOptionPane.showMessageDialog(this, msg);
            gameOver=true;
        }
@@ -160,17 +160,17 @@ public class ChessBoard extends JPanel implements MouseListener {
      }
    //override mouseListener's other unimplemented methods
    public void mouseClicked(MouseEvent e){
-       //��갴��������ϵ���ʱ����
+       //锟斤拷臧达拷锟斤拷锟斤拷锟斤拷锟较碉拷锟斤拷时锟斤拷锟斤拷
    }
 
    public void mouseEntered(MouseEvent e){
-       //�����뵽�����ʱ����
+       //锟斤拷锟斤拷锟诫到锟斤拷锟斤拷锟绞憋拷锟斤拷锟�
    }  
    public void mouseExited(MouseEvent e){
-       //����뿪���ʱ����
+       //锟斤拷锟斤拷肟拷锟斤拷时锟斤拷锟斤拷
    }  
    public void mouseReleased(MouseEvent e){
-       //��갴ť��������ͷ�ʱ����
+       //锟斤拷臧磁ワ拷锟斤拷锟斤拷锟斤拷锟酵凤拷时锟斤拷锟斤拷
    }
    //if the chess at index(x,y) exists
    private boolean findChess(int x,int y){
