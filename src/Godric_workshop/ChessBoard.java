@@ -15,7 +15,7 @@ import java.awt.geom.Ellipse2D;
   
 import javax.swing.*;  
 /** 
- * ChessBoard
+ * ChessBoard 200
 */
 
 public class ChessBoard extends JPanel implements MouseListener {
