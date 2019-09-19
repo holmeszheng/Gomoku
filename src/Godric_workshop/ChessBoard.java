@@ -15,7 +15,7 @@ import java.awt.geom.Ellipse2D;
   
 import javax.swing.*;  
 /** 
- * ChessBoard 100
+ * ChessBoard 300
 */
 
 public class ChessBoard extends JPanel implements MouseListener {
@@ -152,7 +152,7 @@ public class ChessBoard extends JPanel implements MouseListener {
 
        //if someone wins, give a message
        if(isWin()){
-           String msg=String.format("Congratulations锟斤拷%s won锟斤拷", colorName);  
+           String msg=String.format("Congratulations锟斤�?%s won锟斤�?", colorName);  
            JOptionPane.showMessageDialog(this, msg);
            gameOver=true;
        }
@@ -160,17 +160,17 @@ public class ChessBoard extends JPanel implements MouseListener {
      }
    //override mouseListener's other unimplemented methods
    public void mouseClicked(MouseEvent e){
-       //锟斤拷臧达拷锟斤拷锟斤拷锟斤拷锟较碉拷锟斤拷时锟斤拷锟斤拷
+       //锟斤拷臧达拷锟斤拷锟斤拷锟斤拷锟较碉拷锟斤拷时锟斤拷锟斤�?
    }
 
    public void mouseEntered(MouseEvent e){
        //锟斤拷锟斤拷锟诫到锟斤拷锟斤拷锟绞憋拷锟斤拷锟�
    }  
    public void mouseExited(MouseEvent e){
-       //锟斤拷锟斤拷肟拷锟斤拷时锟斤拷锟斤拷
+       //锟斤拷锟斤拷肟拷锟斤拷时锟斤拷锟斤�?
    }  
    public void mouseReleased(MouseEvent e){
-       //锟斤拷臧磁ワ拷锟斤拷锟斤拷锟斤拷锟酵凤拷时锟斤拷锟斤拷
+       //锟斤拷臧磁ワ拷锟斤拷锟斤拷锟斤拷锟酵凤拷时锟斤拷锟斤�?
    }
    //if the chess at index(x,y) exists
    private boolean findChess(int x,int y){
